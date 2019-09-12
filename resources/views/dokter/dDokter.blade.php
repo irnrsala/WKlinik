@@ -11,7 +11,6 @@
 
             <a class="btn btn-info" href="{{ route('DokterT') }}" role="button"><i class="fas fa-plus"> Dokter</i></a>
 
-
             <table class="table table-default">
                 <tbody>
                     <tr>
