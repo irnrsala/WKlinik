@@ -21,7 +21,7 @@ class CreateDokterTable extends Migration
             $table->string('telp');
             // $table->dateTime('dateAccepted')->default(now()->toDateTimeString());
             $table->date('tanggalMulai');
-            $table->string('foto');
+            // $table->string('foto');
             $table->enum('status', ['aktif', 'non Aktif']);
             $table->timestamps();
         });

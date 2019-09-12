@@ -37,6 +37,9 @@
     .btn-info{
       margin-bottom: 15px;
     }
+    .kembali{
+        margin-left: 80%;
+    }
   </style>
  
 

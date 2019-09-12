@@ -2,7 +2,7 @@
   <ul class="navbar-nav bg-gradient-danger sidebar sidebar-dark accordion" id="accordionSidebar">
 
         <!-- Sidebar - Brand -->
-        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/home">
           <div class="sidebar-brand-icon">
             <i class="fas fa-clinic-medical"></i>
           </div>
@@ -32,7 +32,6 @@
           <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
               <a class="collapse-item" href="/dokter">Data Dokter</a>
-              <a class="collapse-item" href="/dokter_edit">Data +</a>
               <a class="collapse-item" href="/pasien">Data Pasien</a>
             </div>
           </div>

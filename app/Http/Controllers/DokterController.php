@@ -27,7 +27,6 @@ class DokterController extends Controller
             'alamat' => $request->input('alamat'),
             'telp' => $request->input('telp'),
             'tanggalMulai' =>$request->input('tglMulai'),
-            'foto' => $request->input('foto'),
             'status' => 'aktif'
         ]);
 
@@ -40,9 +39,10 @@ class DokterController extends Controller
         return view('dokter.eDokter', ['data'=> $id]);
     }
 
-    public function update()
+    public function update(Request $request, dokter $id)
     {
-        
+        $id->update($request->only('nama','spesialis','alamat','telp','tanggalMulai'));
+        return redirect()->route('dokter');
     }
 
 }

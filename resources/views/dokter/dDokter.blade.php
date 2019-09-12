@@ -4,6 +4,12 @@
     
 @section('content')
 
+<style>
+    .fa{
+        color:black;
+    }
+</style>
+
     <div class="card">
         <div class="card-body">
             <h3 class="card-title text-center">Data Dokter</h3>
@@ -27,8 +33,8 @@
                     <tr>
                         <th>{{ $no++ }}</th>
                         <td>
-                             <a href="/dokter_edit/{{ $d->id }}"> <i class="fa fa-pencil-alt"></i></a> | 
-                             <a href="/dokter_delete/{{ $d->id }}"> <i class="fa fa-trash-alt"></i></a>
+                             <a href="/dokter_edit_{{ $d->id }}"> <i class="fa fa-pencil-alt edit"></i></a> | 
+                             <a href="/dokter_delete_{{ $d->id }}"> <i class="fa fa-trash-alt hapus"></i></a>
                         </td>   
                         <td>{{ $d->nama }}</td>                            
                         <td>{{ $d->spesialis }}</td>                            

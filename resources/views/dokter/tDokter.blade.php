@@ -4,11 +4,6 @@
     
 @section('content')
 
-<style>
-    .kembali{
-        margin-left: 80%;
-    }
-</style>
 
     <div class="card">
         <div class="card-body">
@@ -45,11 +40,6 @@
                             <div class="form-group">
                                 <label>Tanggal</label>
                                 <input type="date" id="datepicker" class="form-control" name="tglMulai">
-                            </div>
-
-                            <div class="form-group">
-                                <label>Foto</label>
-                                <input class="form-control" type="file" name="foto">
                             </div>
 
                         </div>
