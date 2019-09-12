@@ -24,11 +24,12 @@
                         <td>Status</td>
                     </tr>
                     @php $no = 1;@endphp
-                        @foreach ($dokter as $key => $d)
+                        @foreach ($dokter as $d)
                     <tr>
                         <th>{{ $no++ }}</th>
                         <td>
-                             <a href="#"><span id="trash" class="fa"></span></a>
+                             <a href="/dokter_edit/{{ $d->id }}"> <i class="fa fa-pencil-alt"></i></a> | 
+                             <a href="/dokter_delete/{{ $d->id }}"> <i class="fa fa-trash-alt"></i></a>
                         </td>   
                         <td>{{ $d->nama }}</td>                            
                         <td>{{ $d->spesialis }}</td>                            
@@ -37,7 +38,6 @@
                         <td>{{ $d->status }}</td>
                     </tr>
                     @endforeach
-
                 </tbody>
             </table>
 

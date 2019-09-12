@@ -15,12 +15,10 @@
             <h3 class="card-title text-center">Tambah Dokter</h3>
             <hr width="80%">
 
-            <div class="container">
                 <form action="/dokter_store" method="post"> 
                     @csrf
                     <div class="row">
                         <div class="col-md-6">
-
                             <div class="form-group">
                                 <label>Nama</label>
                                 <input class="form-control" type="text" name="nama" required>
@@ -61,7 +59,6 @@
                         
                     </div>
                 </form>
-            </div>
 
         </div>
     </div>

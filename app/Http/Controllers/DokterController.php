@@ -13,9 +13,10 @@ class DokterController extends Controller
         return view('dokter.dDokter',compact('dokter'));
     }
 
-    public function tambah()
+    public function create()
     {
-        return view('dokter.tDokter');
+        $dokter = Dokter::all();
+        return view('dokter.tDokter',compact('dokter'));
     }
 
     public function store(Request $request)
@@ -30,6 +31,18 @@ class DokterController extends Controller
             'status' => 'aktif'
         ]);
 
-        return redirect()->route('dokter');
+        return view('dokter.dDokter');
     }
+
+    public function edit(dokter $id)
+    {
+        $data = Dokter::all();
+        return view('dokter.eDokter', ['data'=> $id]);
+    }
+
+    public function update()
+    {
+        
+    }
+
 }
