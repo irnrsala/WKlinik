@@ -16,7 +16,8 @@
             <hr width="80%">
 
             <div class="container">
-                <form action="{{ route('DokterI') }}" method="post"> 
+                <form action="/dokter_store" method="post"> 
+                    @csrf
                     <div class="row">
                         <div class="col-md-6">
 
@@ -45,7 +46,7 @@
 
                             <div class="form-group">
                                 <label>Tanggal</label>
-                                <input class="form-control" id="datepicker" type="date" name="tglMulai" required><input type="text" id="datepicker" class="form-control" placeholder="Tanggal">
+                                <input type="date" id="datepicker" class="form-control" name="tglMulai">
                             </div>
 
                             <div class="form-group">

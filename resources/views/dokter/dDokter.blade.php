@@ -11,6 +11,7 @@
 
             <a class="btn btn-info" href="{{ route('DokterT') }}" role="button"><i class="fas fa-plus"> Dokter</i></a>
 
+
             <table class="table table-default">
                 <tbody>
                     <tr>
@@ -22,19 +23,21 @@
                         <td>Tanggal Mulai Tugas</td>
                         <td>Status</td>
                     </tr>
-                    <tr>
+                    @php $no = 1;@endphp
                         @foreach ($dokter as $key => $d)
-                        <th>{{ $key+1 }}</th>
+                    <tr>
+                        <th>{{ $no++ }}</th>
                         <td>
-                        
+                             <a href="#"><span id="trash" class="fa"></span></a>
                         </td>   
                         <td>{{ $d->nama }}</td>                            
                         <td>{{ $d->spesialis }}</td>                            
                         <td>{{ $d->alamat }}</td>                            
                         <td>{{ $d->tanggalMulai }}</td>                            
-
-                        @endforeach
+                        <td>{{ $d->status }}</td>
                     </tr>
+                    @endforeach
+
                 </tbody>
             </table>
 
